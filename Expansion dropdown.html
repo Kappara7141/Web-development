@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Semantic tags - details and summary</title>
+	<style type="text/css">
+		#tskill{
+			width: 200px;
+			height: 50px;
+		}
+		#submit{
+			background-color: #b2eadf;
+			padding: 16px;
+
+		}
+		#btn{
+			border-radius: 25px;
+			width: 100px;
+			height: 30px;
+			background: #7cbf1d;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body style="margin: 0px;">
+	<h1 style="text-align: center;color: darkgreen;">Registration Form</h1>
+<details style="background-color: #dfeadf;padding: 16px;">
+	<summary>Personal details</summary>
+	<br>
+	<br>
+	<form>
+		<fieldset style="    border: 2px solid black;">
+		<label>First name :</label>
+		<input type="text" name="First name" placeholder="Enter first name" required><br><br>
+		<label>Last name :</label>
+		<input type="text" name="Last name" placeholder="Enter last name" required><br><br>
+		 <label>Date of Birth:</label>
+         <input type="date" id="dob" name="Date of Birth"><br><br>
+		<label>Gender :</label>
+		<input type="radio" name="Gender" value="M" checked>M
+		<input type="radio" name="Gender" value="F">F<br><br>
+		<input type="button" name="Register" value="Register">
+		<input type="reset" name="Reset" value="Reset">
+		</fieldset>
+
+	</form>
+</details>
+<br>
+<br>
+<details style="background-color: #d5d6e2;padding: 16px;">
+	<summary>Education details</summary>
+	<br>
+	<br>
+	<form>
+		<label>Graduation :</label>
+		<input list="Graduation" name="Graduation">
+		<datalist id="Graduation">
+			<option value="B.Tech">
+		    <option value="Bsc">
+		    <option value="Bcom">
+		</datalist>
+
+	</form>
+</details>
+<br>
+<br>
+<details style="background-color: #f3cfdd;padding: 16px;">
+	<summary>Experience details</summary>
+	<br>
+	<br>
+	<table>
+	<form>
+		<td><label>Experience :</label></td>
+		<input type="text" name="Experience" pattern="[0-10]">
+		<br>
+		<br>
+		<label>Company Details :</label>
+		<input type="text" name="Company name">
+		<br>
+		<br>
+		<label>Technical skills :</label>
+          <textarea name="message" rows="10" cols="30"></textarea>
+		<!-- <input type="text" id="tskill" name="technical skills">
+		 -->
+	</form>
+	</table>
+</details>
+<br>
+<br>
+<footer id="submit">
+	<center>
+		<button type="button" id="btn" onclick="alert('Registration successful')"> <a href="./Registration.html">Submit</button>
+	</center>
+</footer>
+
+</body>
+</html>
