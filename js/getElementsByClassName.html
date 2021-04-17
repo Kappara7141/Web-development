@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dom-classname</title>
+	<style type="text/css">
+		div{
+			border :1px solid black;
+			margin: 5px;
+		}
+	</style>
+</head>
+<body>
+<div class="example">
+	Hello JavaScript !
+</div>
+<div class="example">
+	Welcome to JavaScript !
+</div>
+<p>This is a <span class="example">span</span> element</p>
+
+<button onclick="myFunction()">Try it !</button>
+<script type="text/javascript">
+	function myFunction(){
+		var x=document.getElementsByClassName("example");
+		var i;
+		for(i=0;i<x.length;i++){
+			x[i].style.backgroundColor="red";
+		}
+	}
+</script>
+</body>
+</html>

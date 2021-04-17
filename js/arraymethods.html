@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>array object methods</title>
+</head>
+<body>
+	<p id="demo"></p>
+	<button onclick="myfunction()">Click me!</button>
+	<p id="vehicle"></p>
+	<button onclick="pop()">Click</button>
+<script>
+	function myfunction(){
+	let fruits=["Grapes","Banana","Apple"];
+	fruits.push("orange");
+	document.getElementById("demo").innerHTML=fruits;
+}
+function pop(){
+	let vehicle=["Car","Bikes","Jeep"];
+	let a=vehicle.indexOf("Bikes");
+	document.getElementById("vehicle").innerHTML=a;
+}
+</script>
+</body>
+</html>

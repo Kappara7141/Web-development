@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  border: 1px solid black;
+  margin: 5px;
+  padding:15px;
+}
+</style>
+</head>
+<body>
+
+<div class="example">
+  P element in first div with class="example". Div's index is 0
+</div>
+
+<div class="example color">
+  P element in first div with class="example color". Div's index is 0
+</div>
+
+<div class="example color">
+  P element in second div with class="example color". Div's index is 1
+</div>
+
+
+
+<button onclick="myFunction()">Try it</button>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("example color");
+  x[1].style.backgroundColor = "red";
+}
+</script>
+
+</body>
+</html>

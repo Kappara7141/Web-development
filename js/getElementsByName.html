@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dom-Name</title>
+</head>
+<body>
+First Name :<input name="fname"type="text" value="sravya"><br>
+First Name :<input name="fname"type="text" value="sindhu">
+<br>
+<button onClick="myFunction()">Try it !</button>
+<p id="demo"></p>
+<script type="text/javascript">
+	function myFunction(){
+       var x=document.getElementsByName('fname')[0].value;
+       document.getElementById('demo').innerHTML=x;
+	}
+</script>
+
+</body>
+</html>

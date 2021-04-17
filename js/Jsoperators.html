@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>operators</title>
+</head>
+<body>
+<p id="demo">plus operator</p>
+<script type="text/javascript">
+	var x=10;
+	var y=3;
+	var z=x+y;
+	document.getElementById("demo").innerHTML=z;
+</script>
+<p id="demo1">datatype precedence</p>
+<script type="text/javascript">
+	var a=5+5;
+	var b="5"+5;
+	var c="Hello"+5;
+	document.getElementById("demo1").innerHTML=a+"<br>"+b+"<br>"+c;
+</script>
+<p id="demo2">increment</p>
+<script type="text/javascript">
+	var d=3;
+	 d++;
+	var e=d;
+	document.getElementById("demo2").innerHTML=e;
+</script>
+<p id="demo3">exponential</p>
+<script type="text/javascript">
+	var u=5;
+	document.getElementById("demo3").innerHTML=Math.pow(u,2);
+</script>
+<p id="demo4">equals</p>
+<script type="text/javascript">
+	var h=10;
+	var i=10;
+	document.getElementById("demo4").innerHTML=(h==i);
+</script>
+<p id="demo5">strictly equals</p>
+<script type="text/javascript">
+	var q=10;
+	var r="10";
+	document.getElementById("demo5").innerHTML=(q===r);
+</script>
+</body>
+</html>
