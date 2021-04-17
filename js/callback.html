@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>callback function</title>
+</head>
+<body>
+<script>
+	var users=["sravya","sindhu","sridevi"];//datbase
+	 function addUser(username,callback)//add users into database
+	 {
+	 	setTimeout(function()
+	 	{
+	 		users.push(username);
+	 		callback();
+	 	},500);
+	 		
+	 }
+	 function getUsers(){ //get users from database
+	 	setTimeout(function()
+	 	{
+	 		document.write("users in database" +users);
+	 	},100);
+	 }
+	 addUser("sravs",getUsers);
+</script>
+</body>
+</html>
