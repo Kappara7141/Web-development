@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>promise in JS</title>
+</head>
+<body>
+<h1>Promise in javascript</h1>
+<hr>
+<script>
+	let myPromise=new Promise((resolve,reject)=>{
+		let connection=true;
+		if(connection){
+			resolve("connection established successfully");
+		}
+		else{
+			reject("connection rejected");
+		}
+	});
+	myPromise.then((message)=>{
+		console.log("Yes we get"  + message);
+	}).catch((message)=>{
+		console.log("Sorry we are not access" +message);
+	});
+	
+
+</script>
+</body>
+</html>
